@@ -30,7 +30,7 @@ alias py=python3
 
 
 
-# some apps and ubuntu software center are not working(or opening )
+## some apps and ubuntu software center are not working(or opening )
 this may be the cause due to not installed gnome-software , so just installing it sometime fix the error
 run the following
 
