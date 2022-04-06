@@ -40,3 +40,14 @@ run the following
 `sudo apt update && apt upgrade`
 ###### install gnome-software
 `sudo apt install gnome-software`
+
+
+
+
+#### Add git configuration files to ubuntu
+### vi ~/.gitconfig
+```
+[user]
+    name = your-github-username
+    email = your-github-email
+```
