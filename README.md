@@ -61,7 +61,7 @@ run the following
 ###### sudo apt-get install -y nodejs
 ###### It will install node and npm as well
 ###### check via `node --version` and `npm --version` and `npx --version`
-
+####### Use sudo if facing any issue
 ### Remember the older documentaion show `nodejs --version`
 ### But the latest is `node --version`
 
