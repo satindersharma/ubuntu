@@ -51,3 +51,11 @@ run the following
     name = your-github-username
     email = your-github-email
 ```
+
+
+
+#### Install node
+##### https://github.com/nodesource/distributions/blob/master/README.md#debinstall
+### Remember the older documentaion show `nodejs --version`
+### But the latest is `node --version`
+
