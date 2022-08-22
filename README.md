@@ -65,3 +65,4 @@ run the following
 ### Remember the older documentaion show `nodejs --version`
 ### But the latest is `node --version`
 
+##### https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md
