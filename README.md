@@ -56,6 +56,12 @@ run the following
 
 #### Install node
 ##### https://github.com/nodesource/distributions/blob/master/README.md#debinstall
+
+###### curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+###### sudo apt-get install -y nodejs
+###### It will install node and npm as well
+###### check via `node --version` and `npm --version`
+
 ### Remember the older documentaion show `nodejs --version`
 ### But the latest is `node --version`
 
