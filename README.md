@@ -65,3 +65,8 @@ run the following
 ### Remember the older documentaion show `nodejs --version`
 ### But the latest is `node --version`
 ##### https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+
+##### chech the dir where it is installed  `npm config get prefix` this will return sothing like this `/home/sharma/.npm-packages`
+##### `sudo chown -R $(whoami) /home/sharma/.npm-packages`
+##### `sudo chown -R $(whoami) ~/.npm`
+##### sometimes `sudo chown -R $USER .`
