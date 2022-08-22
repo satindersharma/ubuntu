@@ -64,5 +64,4 @@ run the following
 ####### Use sudo if facing any issue
 ### Remember the older documentaion show `nodejs --version`
 ### But the latest is `node --version`
-
-##### https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md
+##### https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
