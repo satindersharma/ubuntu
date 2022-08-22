@@ -60,7 +60,7 @@ run the following
 ###### curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 ###### sudo apt-get install -y nodejs
 ###### It will install node and npm as well
-###### check via `node --version` and `npm --version`
+###### check via `node --version` and `npm --version` and `npx --version`
 
 ### Remember the older documentaion show `nodejs --version`
 ### But the latest is `node --version`
