@@ -70,3 +70,13 @@ run the following
 ##### `sudo chown -R $(whoami) /home/sharma/.npm-packages`
 ##### `sudo chown -R $(whoami) ~/.npm`
 ##### sometimes `sudo chown -R $USER .`
+
+
+
+
+#### `pip install psycopg2-binary`
+#####  `sudo -u postgres psql`
+##### `CREATE DATABASE new_db;`
+##### `CREATE USER db_user WITH PASSWORD 'Pass123';`
+
+##### `GRANT ALL PRIVILEGES ON DATABASE new_db TO db_user;`
