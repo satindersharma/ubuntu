@@ -28,6 +28,23 @@ alias python=python3
 alias py=python3
 ```
 
+```bash
+# using pip as pip3
+alias pip=pip3
+
+# using python as python3
+alias python=python3
+
+# using py as python3
+alias py=python3
+
+
+#Virtualenvwrapper settings:
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_VIRTUALENV=~/.local/bin/virtualenv
+source ~/.local/bin/virtualenvwrapper.sh
+```
 
 
 ## some apps and ubuntu software center are not working(or opening )
