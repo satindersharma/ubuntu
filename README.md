@@ -37,13 +37,19 @@ alias python=python3
 
 # using py as python3
 alias py=python3
-
-
+```
+```bash
 #Virtualenvwrapper settings:
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENVWRAPPER_VIRTUALENV=~/.local/bin/virtualenv
 source ~/.local/bin/virtualenvwrapper.sh
+```
+```bash
+#Virtualenvwrapper settings: on server
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=~/.Envs
+source /usr/local/bin/virtualenvwrapper.sh
 ```
 
 
