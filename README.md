@@ -120,7 +120,7 @@ click on new  self hosted runner
 follow the setps(on your server)
 
 now in your runner folder
-run sudo svc.sh install (if this give error of sudo then add export RUNNER_ALLOW_RUNASROOT="1" in your ~/.bashrc)
+run sudo svc.sh install (if this give error of sudo then add `export RUNNER_ALLOW_RUNASROOT="1"` in your ~/.bashrc)
 _work is the folder of your repo , so choose accordingly
 _diag is the folder of logs
 
