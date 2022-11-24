@@ -117,10 +117,10 @@ you can create action from there or create an xml in .github/workflows/xyz.yml i
 
 now click on your repo settings / action / runners
 click on new  self hosted runner
-follow the setps(on your server)
+##### follow these setps(on your server)
 
 now in your runner folder
-run sudo svc.sh install (if this give error of sudo then add `export RUNNER_ALLOW_RUNASROOT="1"` in your ~/.bashrc)
+#### run `sudo svc.sh install` (if this give error of sudo then add `export RUNNER_ALLOW_RUNASROOT="1"` in your ~/.bashrc)
 _work is the folder of your repo , so choose accordingly
 _diag is the folder of logs
 
@@ -131,7 +131,7 @@ _diag is the folder of logs
 location ^/static/is the location of STATIC_ROOT (where all python manage.py collectstatic will go)
 
 also for force symbolic link
-sudo ln -fs /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
+#### `sudo ln -fs /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled`
 
 ```xml
 server {
