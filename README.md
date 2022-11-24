@@ -125,8 +125,11 @@ _work is the folder of your repo , so choose accordingly
 _diag is the folder of logs
 
 
-follow this setp sto setup gunicorn and nginx
-https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04
+#### follow this setp sto setup gunicorn and nginx
+###### https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04
+
+location ^/static/is the location of STATIC_ROOT (where all python manage.py collectstatic will go)
+
 
 ```xml
 server {
