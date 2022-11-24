@@ -130,6 +130,8 @@ _diag is the folder of logs
 
 location ^/static/is the location of STATIC_ROOT (where all python manage.py collectstatic will go)
 
+also for force symbolic link
+sudo ln -fs /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
 
 ```xml
 server {
