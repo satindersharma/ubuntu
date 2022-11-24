@@ -106,7 +106,7 @@ run the following
 ##### `GRANT ALL PRIVILEGES ON DATABASE new_db TO db_user;`
 
 
-===
+<hr/>
 
 
 ## Host Site github actions
