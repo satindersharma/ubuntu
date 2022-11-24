@@ -80,14 +80,14 @@ run the following
 #### Install node
 ##### https://github.com/nodesource/distributions/blob/master/README.md#debinstall
 
-###### curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-###### sudo apt-get install -y nodejs
+###### `curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -`
+###### `sudo apt-get install -y nodejs`
 ###### It will install node and npm as well
 ###### check via `node --version` and `npm --version` and `npx --version`
-###### if not found npm then, sudo apt install npm -y
+###### if not found npm then, `sudo apt install npm -y`
 ####### Use sudo if facing any issue
-### Remember the older documentaion show `nodejs --version`
-### But the latest is `node --version`
+#### Remember the older documentaion show `nodejs --version`
+#### But the latest is `node --version`
 ##### https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
 
 ##### chech the dir where it is installed  `npm config get prefix` this will return sothing like this `/home/sharma/.npm-packages`
