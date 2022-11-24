@@ -75,7 +75,7 @@ run the following
     email = your-github-email
 ```
 
-
+<hr/>
 
 #### Install node
 ##### https://github.com/nodesource/distributions/blob/master/README.md#debinstall
