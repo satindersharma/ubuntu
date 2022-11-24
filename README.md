@@ -85,7 +85,7 @@ run the following
 ###### It will install node and npm as well
 ###### check via `node --version` and `npm --version` and `npx --version`
 ###### if not found npm then, `sudo apt install npm -y`
-####### Use sudo if facing any issue
+###### Use sudo if facing any issue
 #### Remember the older documentaion show `nodejs --version`
 #### But the latest is `node --version`
 ##### https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
