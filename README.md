@@ -84,6 +84,7 @@ run the following
 ###### sudo apt-get install -y nodejs
 ###### It will install node and npm as well
 ###### check via `node --version` and `npm --version` and `npx --version`
+###### if not found npm then, sudo apt install npm -y
 ####### Use sudo if facing any issue
 ### Remember the older documentaion show `nodejs --version`
 ### But the latest is `node --version`
@@ -103,3 +104,47 @@ run the following
 ##### `CREATE USER db_user WITH PASSWORD 'Pass123';`
 
 ##### `GRANT ALL PRIVILEGES ON DATABASE new_db TO db_user;`
+
+
+
+
+
+## Host Site github actions
+
+go to your repo  click on actions
+
+you can create action from there or create an xml in .github/workflows/xyz.yml in your repo
+
+now click on your repo settings / action / runners
+click on new  self hosted runner
+follow the setps(on your server)
+
+now in your runner folder
+run sudo svc.sh install (if this give error of sudo then add export RUNNER_ALLOW_RUNASROOT="1" in your ~/.bashrc)
+_work is the folder of your repo , so choose accordingly
+_diag is the folder of logs
+
+
+follow this setp sto setup gunicorn and nginx
+https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04
+
+```json
+server {
+        listen 80;
+        server_name 164.92.76.200;
+root  /root/actions-runner/AssetTransferProject/AssetTransferProject;
+location = /favicon.ico { access_log off; log_not_found off; }
+location ^/static/ {
+autoindex on;
+root /root/actions-runner/AssetTransferProject/AssetTransferProject/static_cdn/;
+}
+
+location / {
+        include proxy_params;
+        proxy_pass http://unix:/run/gunicorn.sock;
+        }
+}
+
+
+ ```
+
