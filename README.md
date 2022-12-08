@@ -153,3 +153,6 @@ location / {
 
  ```
 
+
+### Get the ip of the system
+#### `hostname -I`
