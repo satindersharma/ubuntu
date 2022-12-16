@@ -130,6 +130,7 @@ _diag is the folder of logs
 
 #### sudo nano /etc/systemd/system/gunicorn.socket
 ```xml
+[Unit]
 Description=gunicorn socket
 
 [Socket]
@@ -138,12 +139,11 @@ SocketUser=www-data
 
 [Install]
 WantedBy=sockets.target
-
 ```
 
 #### sudo nano /etc/systemd/system/gunicorn.service
 ```xml
-
+[Unit]
 Description=gunicorn daemon
 Requires=gunicorn.socket
 After=network.target
@@ -151,7 +151,7 @@ After=network.target
 [Service]
 User=root
 Group=www-data
-WorkingDirectory=/root/actions-runner/path_to_your_project_root
+WorkingDirectory=/root/actions-runner/AssetTransferProject/AssetTransferProject
 ExecStart=/root/.Envs/atf/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
@@ -160,6 +160,7 @@ ExecStart=/root/.Envs/atf/bin/gunicorn \
 
 [Install]
 WantedBy=multi-user.target
+
 ```
 
 
