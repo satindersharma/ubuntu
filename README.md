@@ -128,6 +128,41 @@ _diag is the folder of logs
 #### follow this setp sto setup gunicorn and nginx
 ###### https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04
 
+#### sudo nano /etc/systemd/system/gunicorn.socket
+```xml
+Description=gunicorn socket
+
+[Socket]
+ListenStream=/run/gunicorn.sock
+SocketUser=www-data
+
+[Install]
+WantedBy=sockets.target
+
+```
+
+#### sudo nano /etc/systemd/system/gunicorn.service
+```xml
+
+Description=gunicorn daemon
+Requires=gunicorn.socket
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/root/actions-runner/path_to_your_project_root
+ExecStart=/root/.Envs/atf/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          AssetTransferProject.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
 location ^/static/is the location of STATIC_ROOT (where all python manage.py collectstatic will go)
 
 also for force symbolic link
