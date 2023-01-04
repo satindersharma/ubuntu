@@ -194,5 +194,5 @@ location / {
 #### `hostname -I`
 
 
-## Either use `sudo systemctl status postgresql.service`
-## or  use `sudo service postgresql status`
+##### Either use `sudo systemctl status postgresql.service`
+##### or  use `sudo service postgresql status`
