@@ -196,3 +196,10 @@ location / {
 
 ##### Either use `sudo systemctl status postgresql.service`
 ##### or  use `sudo service postgresql status`
+
+##### `sudo -u postgres psql`
+##### postgres=# `create database mydb;`
+##### postgres=# `create user myuser with encrypted password 'mypass';`
+##### if user already created and want to change the password
+##### postgres=# `alter user myuser with encrypted password 'mypass';`
+##### postgres=# `grant all privileges on database mydb to myuser;`
