@@ -203,3 +203,5 @@ location / {
 ##### if user already created and want to change the password
 ##### postgres=# `alter user myuser with encrypted password 'mypass';`
 ##### postgres=# `grant all privileges on database mydb to myuser;`
+
+##### restart postgres `sudo systemctl restart postgresql.service`
