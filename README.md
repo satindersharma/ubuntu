@@ -193,7 +193,7 @@ location / {
 ### Get the ip of the system
 #### `hostname -I`
 
-
+### postgres
 ##### Either use `sudo systemctl status postgresql.service`
 ##### or  use `sudo service postgresql status`
 
