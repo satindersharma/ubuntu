@@ -206,11 +206,14 @@ location / {
 
 ##### restart postgres `sudo systemctl restart postgresql.service`
 
+check connection
+##### `curl --unix-socket /run/gunicorn.sock localhost`
+
+##### `ls /etc/nginx/sites-enabled`
 
 ##### `sudo vi /etc/nginx/sites-available/myproject`
 also for force symbolic link
 #### `sudo ln -fs /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled`
 
 
-##### `ls /etc/nginx/sites-enabled`
 
