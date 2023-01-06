@@ -205,3 +205,12 @@ location / {
 ##### postgres=# `grant all privileges on database mydb to myuser;`
 
 ##### restart postgres `sudo systemctl restart postgresql.service`
+
+
+##### `sudo vi /etc/nginx/sites-available/myproject`
+also for force symbolic link
+#### `sudo ln -fs /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled`
+
+
+##### `ls /etc/nginx/sites-enabled`
+
