@@ -215,5 +215,6 @@ check connection
 also for force symbolic link
 #### `sudo ln -fs /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled`
 
+#### `du -h your/lofder/location |sort -h`
 
-
+#### `du -hs`
