@@ -218,3 +218,11 @@ also for force symbolic link
 #### `du -h your/lofder/location |sort -h`
 
 #### `du -hs`
+
+
+
+#### know the version of linux
+`cat /etc/os-release`
+
+#### know th ecpu ram usage
+`top`
