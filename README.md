@@ -220,7 +220,7 @@ also for force symbolic link
 #### `du -hs`
 
 #### disk usage
-###### `du -hs`
+##### `du -hs`
 
 #### know the version of linux
 ##### `cat /etc/os-release`
