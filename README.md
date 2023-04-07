@@ -223,7 +223,7 @@ also for force symbolic link
 ###### `du -hs`
 
 #### know the version of linux
-###### `cat /etc/os-release`
+##### `cat /etc/os-release`
 
 #### know th ecpu ram usage
-###### `top`
+##### `top`
