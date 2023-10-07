@@ -105,6 +105,9 @@ run the following
 
 ##### `GRANT ALL PRIVILEGES ON DATABASE new_db TO db_user;`
 
+##### `ALTER USER db_user WITH PASSWORD 'qwerty12';`
+
+##### `ALTER ROLE "db_user" WITH LOGIN;`
 
 <hr/>
 
