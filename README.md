@@ -127,6 +127,10 @@ now in your runner folder
 _work is the folder of your repo , so choose accordingly
 _diag is the folder of logs
 
+### Corey Schafer
+
+ youtube.com/watch?v=Sa_kQheCnds
+ 
 
 #### follow this setp sto setup gunicorn and nginx
 ###### https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04
